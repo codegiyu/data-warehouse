@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desc" content="Data Warehouse is a data storage area that has been tested for security, so you can store your data here
+        safely but not be afraid of being stolen by others."
+    >
+    <meta name="author" content="Codegiyu">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <title>Data Warehouse</title>
+</head>
+<body>
+    <header>
+        <div class=" header-wrap container flex justify-between items-center">
+            <div class="logo-and-nav flex items-center">
+                <div class="logo">
+                    <img src="./assets/img/logo.svg" alt="" class="logo-img">
+                </div>
+                <nav class="header-nav hidden md-block">
+                    <ul class="flex no-decoration-family items-center">
+                        <li>
+                            <a href="#about" class="nav_link active">About</a>
+                        </li>
+                        <li>
+                            <a href="#help" class="nav_link">Help</a>
+                        </li>
+                        <li>
+                            <a href="#features" class="nav_link">Features</a>
+                        </li>
+                        <li>
+                            <a href="#signup" class="nav_link">Signup</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="w-fit hidden md-block">
+                <button class="header-btn btn flex items-center bg-white w-fit">
+                    <span class="btn-text-regular text-navy tracking-5">Request Demo</span>
+                    <img src="./assets/img/arrow.svg" alt="" class="btn-arrow">
+                </button>
+            </div>
+
+            <div class="w-fit md-hidden">
+                <button class="menu-btn md-hidden block">
+                    <img src="./assets/img/menu.svg" alt="">
+                </button>
+            </div>
+
+            <div class="menu-pane md-hidden block fixed">
+                <div class="menu-main hidden">
+                    <div class="menu-wrap">
+                        <div class="menu-top-line flex justify-between">
+                            <div class="logo">
+                                <img src="./assets/img/logo.svg" alt="" class="logo-img">
+                            </div>
+
+                            <button class="menu-btn">
+                                <img src="./assets/img/menu-close.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div class="main-menu-wrap">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero flex flex-col md-flex-row">
+            <div class="hero-wrap">
+                <div class="hero-text-section flex flex-col">
+                    <h1 class="hero-heading ff-helvetica leading-xs xl-heading font-bold text-navy">
+                        Save your data storage here.
+                    </h1>
+                    <p class="regular-paragraph">
+                        Data Warehouse is a data storage area that has been
+                        tested for security, so you can store your data here
+                        safely but not be afraid of being stolen by others.
+                    </p>
+                    <div class="btn-row flex ">
+                        <button class="btn bg-purple text-white btn-text-regular">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-img-section relative">
+                    <img src="./assets/img/hero.svg" alt="" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="who-we-are">
+            <div class="who-we-are-wrap container rounded-lg bg-pink-15 flex flex-col md-flex-row items-center">
+                <div class="who-we-are-img-section">
+                    <img src="./assets/img/data-bank.svg" alt="" class="who-we-are-img">
+                </div>
+
+                <div class="who-we-are-text-section flex flex-col">
+                    <h2 class="section-heading text-navy">
+                        We are a high-level data storage bank
+                    </h2>
+                    <p class="regular-paragraph">
+                        The place to store various data that you can access at any time 
+                        through the internet and where you can carry it. This very flexible 
+                        storage area has a high level of security. To enter into your own 
+                        data you must enter the password that you created when you 
+                        registered in this Data Warehouse. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="features-wrap container flex flex-col">
+                <div class="features-heading flex flex-col">
+                    <h2 class="section-heading text-navy text-center">
+                        Features
+                    </h2>
+                    <p class="regular-paragraph text-center">
+                        Some of the features and advantages that we provide for those of 
+                        you who store data in this Data Warehouse. 
+                    </p>
+                </div>
+
+                <div class="features-main grid grid-cols-1 md-grid-cols-2">
+                    <div class="feature-single-wrap flex justify-end relative">
+                        <div class="feature-single-box search-data relative rounded-lg">
+                            <div class="feature-single-box-wrap">
+                                <div class="feature-single-box-text-wrap">
+                                    <h3 class="feature-heading">Search Data</h3>
+                                    <p class="feature-paragraph">
+                                        Don't worry if your data is very large, the Data Warehouse provides a search engine,
+                                        which is useful for making it easier to find data effectively saving time.
+                                    </p>
+                                </div>
+                                <button class="feature-btn bg-transparent flex items-center">
+                                    <span class="btn-text-regular text-navy tracking-5">Learn more</span>
+                                    <img src="./assets/img/arrow.svg" alt="" class="btn-arrow">
+                                </button>
+                            </div>
+                            <div class="feature-single-shape absolute"></div>
+                        </div>
+                        <img src="./assets/img/search-data.svg" alt="" class="feature-single-img absolute">
+                    </div>
+
+                    <div class="feature-single-wrap flex justify-end relative">
+                        <div class="feature-single-box all-day relative rounded-lg">
+                            <div class="feature-single-box-wrap">
+                                <div class="feature-single-box-text-wrap">
+                                    <h3 class="feature-heading">24 Hours Access</h3>
+                                    <p class="feature-paragraph">
+                                        Access is given 24 hours a full morning to night and meet again in the morning,
+                                        giving you comfort when you need data when urgent.
+                                    </p>
+                                </div>
+                                <button class="feature-btn bg-transparent flex items-center">
+                                    <span class="btn-text-regular text-navy tracking-5">Learn more</span>
+                                    <img src="./assets/img/arrow.svg" alt="" class="btn-arrow">
+                                </button>
+                            </div>
+                            <div class="feature-single-shape absolute"></div>
+                        </div>
+                        <img src="./assets/img/24-hours.svg" alt="" class="feature-single-img absolute">
+                    </div>
+
+                    <div class="feature-single-wrap flex justify-end relative">
+                        <div class="feature-single-box print-out relative rounded-lg">
+                            <div class="feature-single-box-wrap">
+                                <div class="feature-single-box-text-wrap">
+                                    <h3 class="feature-heading">Print Out</h3>
+                                    <p class="feature-paragraph">
+                                        Print out service gives you convenience if someday
+                                        you need print data, just edit it all and just print it.
+                                    </p>
+                                </div>
+                                <button class="feature-btn bg-transparent flex items-center">
+                                    <span class="btn-text-regular text-navy tracking-5">Learn more</span>
+                                    <img src="./assets/img/arrow.svg" alt="" class="btn-arrow">
+                                </button>
+                            </div>
+                            <div class="feature-single-shape absolute"></div>
+                        </div>
+                        <img src="./assets/img/print.svg" alt="" class="feature-single-img absolute">
+                    </div>
+
+                    <div class="feature-single-wrap flex justify-end relative">
+                        <div class="feature-single-box security relative rounded-lg">
+                            <div class="feature-single-box-wrap">
+                                <div class="feature-single-box-text-wrap">
+                                    <h3 class="feature-heading">Security Code</h3>
+                                    <p class="feature-paragraph">
+                                        Data Security is one of our best facilities. Allows for your files
+                                        to be safer. The file can be secured with a code or password that
+                                        you created, so only you can open the file.
+                                    </p>
+                                </div>
+                                <button class="feature-btn bg-transparent flex items-center">
+                                    <span class="btn-text-regular text-navy tracking-5">Learn more</span>
+                                    <img src="./assets/img/arrow.svg" alt="" class="btn-arrow">
+                                </button>
+                            </div>
+                            <div class="feature-single-shape absolute"></div>
+                        </div>
+                        <img src="./assets/img/security.svg" alt="" class="feature-single-img absolute">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="help" class="testimonials">
+            <div class="testimonials-wrap container rounded-lg bg-purple">
+                <h2 class="section-heading text-white">
+                    Testimonials
+                </h2>
+
+                <div class="slide-container flex flex-nowrap">
+                    <div class="slide-single active bg-white flex flex-col rounded-md">
+                        <div class="slide-single-top flex items-center">
+                            <img src="./assets/img/testimonial-1-pic.svg" alt="" class="slide-single-img">
+                            <div class="slide-single-heading">
+                                <p class="slide-single-name">John Fang</p>
+                                <p class="slide-single-position">wordfaang.com</p>
+                            </div>
+                        </div>
+                        <div class="slide-single-bottom">
+                            <p class="slide-single-message">
+                                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat 
+                                tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-single bg-white flex flex-col rounded-md">
+                        <div class="slide-single-top flex items-center">
+                            <img src="./assets/img/testimonial-1-pic.svg" alt="" class="slide-single-img">
+                            <div class="slide-single-heading">
+                                <p class="slide-single-name">John Fang</p>
+                                <p class="slide-single-position">wordfaang.com</p>
+                            </div>
+                        </div>
+                        <div class="slide-single-bottom">
+                            <p class="slide-single-message">
+                                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat 
+                                tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-single bg-white flex flex-col rounded-md">
+                        <div class="slide-single-top flex items-center">
+                            <img src="./assets/img/testimonial-1-pic.svg" alt="" class="slide-single-img">
+                            <div class="slide-single-heading">
+                                <p class="slide-single-name">John Fang</p>
+                                <p class="slide-single-position">wordfaang.com</p>
+                            </div>
+                        </div>
+                        <div class="slide-single-bottom">
+                            <p class="slide-single-message">
+                                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat 
+                                tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-single bg-white flex flex-col rounded-md">
+                        <div class="slide-single-top flex items-center">
+                            <img src="./assets/img/testimonial-1-pic.svg" alt="" class="slide-single-img">
+                            <div class="slide-single-heading">
+                                <p class="slide-single-name">John Fang</p>
+                                <p class="slide-single-position">wordfaang.com</p>
+                            </div>
+                        </div>
+                        <div class="slide-single-bottom">
+                            <p class="slide-single-message">
+                                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat 
+                                tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-controls flex justify-between items-center">
+                    <div class="dots-group flex items-center w-fit">
+                        <span class="slide-dot active"></span>
+                        <span class="slide-dot"></span>
+                        <span class="slide-dot"></span>
+                        <span class="slide-dot"></span>
+                    </div>
+
+                    <div class="slide-btns flex items-center w-fit">
+                        <button class="slide-arrow flex items-center left">
+                            <div class="arrow-shaft"></div>
+                        </button>
+                        <button class="slide-arrow flex items-center right">
+                            <div class="arrow-shaft"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="signup" class="cta">
+            <div class="cta-wrap container flex flex-col md-flex-row md-justify-between md-items-center">
+                <div class="cta-texts flex flex-col">
+                    <h2 class="section-heading text-navy">
+                        Try for free!
+                    </h2>
+                    <p class="regular-paragraph">
+                        Get limited 1 week free try our features!
+                    </p>
+                </div>
+                <div class="cta-buttons w-fit flex flex-col md-flex-row items-center">
+                    <button class="btn bg-pink text-white btn-text-regular">
+                        Learn more
+                    </button>
+                    <button class="header-btn btn flex items-center bg-white w-fit">
+                        <span class="btn-text-regular text-navy tracking-5">Request Demo</span>
+                        <img src="./assets/img/arrow.svg" alt="" class="btn-arrow">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrap container flex flex-col">
+            <div class="footer-top flex flex-col md-flex-row justify-between">
+                <div class="footer-about flex flex-col">
+                    <div class="footer-about-top flex items-center">
+                        <img src="./assets/img/logo.svg" alt="" class="footer-logo">
+                        <p class="footer-logo-text">DataWarehouse</p>
+                    </div>
+                    <div class="footer-about-text flex flex-col">
+                        <p class="footer-address">
+                            Warehouse Society, 234 Bahagia Ave Street PRBW 29281
+                        </p>
+                        <p class="footer-contact">
+                            info@warehouse.project
+                            1-232-3434 (Main)
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-top-right flex flex-col md-flex-row">
+                    <div class="footer-links flex justify-between">
+                        <div class="footer-about-links w-fit flex-none">
+                            <h4 class="footer-header">
+                                About
+                            </h4>
+                            <nav>
+                                <ul class="flex flex-col no-decoration-family">
+                                    <li>
+                                        <a href="#" class="footer-link">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">DW News</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-help-links w-fit flex-none">
+                            <h4 class="footer-header">
+                                Help
+                            </h4>
+                            <nav>
+                                <ul class="flex flex-col no-decoration-family">
+                                    <li>
+                                        <a href="#" class="footer-link">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Sign up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Reports</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Q&A</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer-media">
+                        <h4 class="footer-header">
+                            Social Media
+                        </h4>
+                        <div class="footer-icon-group flex w-fit">
+                            <div class="footer-icon-wrap circle grid place-items-center">
+                                <img src="./assets/img/facebook.svg" alt="" class="footer-media-icon">
+                            </div>
+                            <div class="footer-icon-wrap circle grid place-items-center">
+                                <img src="./assets/img/twitter.svg" alt="" class="footer-media-icon">
+                            </div>
+                            <div class="footer-icon-wrap circle grid place-items-center">
+                                <img src="./assets/img/instagram.svg" alt="" class="footer-media-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom flex justify-between items-center">
+                <p class="footer-rights">
+                    © Datawarehouse™, 2020. All rights reserved.
+                    Company Registration Number: 21479524.
+                </p>
+                <button class="message-btn-wrap grid place-items-center">
+                    <img src="./assets/img/message.svg" alt="" class="footer-message-icon">
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
