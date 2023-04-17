@@ -28,14 +28,14 @@ const slideHandler = (() => {
         } else {
             newIndex = state.index + num
         }
-        console.log(newIndex, num)
+        
         setState({ index: newIndex })
     }
 
     const listeners = () => {
         prevBtn.addEventListener("click", () => changeSlide(-1))
         nextBtn.addEventListener("click", () => changeSlide(1))
-        console.log("yes")
+        
     }
 
     const setState = (obj) => {
@@ -54,12 +54,12 @@ const slideHandler = (() => {
             
             dots[i].classList.remove("active")
         }
-        console.log(prevBtn)
+        
         if (state.index - 1 >= 0 && state.index - 1 <= dots.length - 1) {
             dots[state.index - 1].classList.add("active")
         }
 
-        console.log(nextBtn)
+        
     }
 
     return {
