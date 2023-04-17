@@ -619,21 +619,41 @@ header {
 }
 
 .who-we-are-img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .who-we-are-text-section {
     padding: 0 2rem 3rem 2rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     .who-we-are {
         --inline-edge: 1.5rem;
+    }
+
+    .who-we-are-wrap {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .who-we-are-img {
+        width: 20rem;
     }
 
     .who-we-are-text-section {
         padding-left: 4rem;
         padding-right: 6rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .who-we-are-wrap {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .who-we-are-img {
+        width: auto;
     }
 }
 
