@@ -19,9 +19,11 @@
     <header>
         <div class=" header-wrap container flex justify-between items-center">
             <div class="logo-and-nav flex items-center">
-                <div class="logo">
-                    <img src="assets/img/logo.svg" alt="" class="logo-img">
-                </div>
+                <a href="#" class="">
+                    <div class="logo">
+                        <img src="assets/img/logo.svg" alt="" class="logo-img">
+                    </div>
+                </a>
                 <nav class="header-nav hidden md-block">
                     <ul class="flex no-decoration-family items-center">
                         <li>
@@ -48,26 +50,43 @@
             </div>
 
             <div class="w-fit md-hidden">
-                <button class="menu-btn md-hidden block">
+                <button id="menu-open-btn" class="menu-btn md-hidden block">
                     <img src="assets/img/menu.svg" alt="">
                 </button>
             </div>
 
-            <div class="menu-pane md-hidden block fixed">
-                <div class="menu-main hidden">
-                    <div class="menu-wrap">
-                        <div class="menu-top-line flex justify-between">
-                            <div class="logo">
-                                <img src="assets/img/logo.svg" alt="" class="logo-img">
+            <div id="menu-pane" class="menu-pane md-hidden block">
+                <div class="menu dark-bg">
+                    <div class="menu-main bg-white">
+                        <div class="menu-wrap flex flex-col">
+                            <div class="menu-top-line flex justify-between">
+                                <a href="#" class="menu-link-close">
+                                    <div class="logo">
+                                        <img src="assets/img/logo.svg" alt="" class="logo-img">
+                                    </div>
+                                </a>
+                                <button id="menu-close-btn" class="menu-btn">
+                                    <img src="assets/img/menu-close.svg" alt="">
+                                </button>
                             </div>
-
-                            <button class="menu-btn">
-                                <img src="assets/img/menu-close.svg" alt="">
-                            </button>
-                        </div>
-
-                        <div class="main-menu-wrap">
-
+                            <div class="main-menu-wrap">
+                                <nav class="menu-nav">
+                                    <ul class="flex flex-col no-decoration-family items-center">
+                                        <li>
+                                            <a href="#about" class="menu_link menu-link-close active">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#help" class="menu_link menu-link-close">Help</a>
+                                        </li>
+                                        <li>
+                                            <a href="#features" class="menu_link menu-link-close">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#signup" class="menu_link menu-link-close">Signup</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>

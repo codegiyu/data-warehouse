@@ -516,7 +516,53 @@ header {
     width: 3rem;
 }
 
+.menu-pane {
+    width: 100vw;
+    height: 100vh;
+    background: #00000099;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in;
+    z-index: 99;
+}
 
+.menu-pane.active {
+    transform: translateX(0);
+}
+
+.menu-dark-bg {
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+}
+
+.menu-main {
+    width: 100%;
+    padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.menu-wrap {
+    --gap: 2.5rem;
+}
+
+.menu-nav ul {
+    --gap: 2.5rem;
+}
+
+.menu_link {
+    font-size: var(--fs-300);
+    line-height: 160%;
+    font-family: var(--ff-avenir);
+    color: rgb( var(--clr-grey) );
+    font-weight: 500;
+}
+
+.menu_link.active, .menu_link:hover, .menu_link:focus, .menu_link:active {
+    color: rgb( var(--clr-navy) );
+    font-weight: 800;
+}
 
 /* --------------------------- */
 /* -------Hero Section-------- */
