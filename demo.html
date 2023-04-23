@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desc" content="Data Warehouse is a data storage area that has been tested for security, so you can store your data here
+        safely but not be afraid of being stolen by others."
+    >
+    <meta name="author" content="Codegiyu">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <title>Demo - Data Warehouse</title>
+</head>
+<body>
+    <header>
+        <div class=" header-wrap container flex justify-between items-center">
+            <div class="logo-and-nav flex items-center">
+                <a href="index.html" class="">
+                    <div class="logo">
+                        <img src="assets/img/logo.svg" alt="" class="logo-img">
+                    </div>
+                </a>
+                <nav class="header-nav hidden md-block">
+                    <ul class="flex no-decoration-family items-center">
+                        <li>
+                            <a href="index.html#about" class="nav_link">About</a>
+                        </li>
+                        <li>
+                            <a href="index.html#help" class="nav_link">Help</a>
+                        </li>
+                        <li>
+                            <a href="index.html#features" class="nav_link">Features</a>
+                        </li>
+                        <li>
+                            <a href="index.html#signup" class="nav_link">Signup</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="w-fit md-hidden">
+                <button id="menu-open-btn" class="menu-btn md-hidden block">
+                    <img src="assets/img/menu.svg" alt="">
+                </button>
+            </div>
+
+            <div id="menu-pane" class="menu-pane md-hidden block">
+                <div class="menu dark-bg">
+                    <div class="menu-main bg-white">
+                        <div class="menu-wrap flex flex-col">
+                            <div class="menu-top-line flex justify-between">
+                                <a href="#" class="menu-link-close">
+                                    <div class="logo">
+                                        <img src="assets/img/logo.svg" alt="" class="logo-img">
+                                    </div>
+                                </a>
+                                <button id="menu-close-btn" class="menu-btn">
+                                    <img src="assets/img/menu-close.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="main-menu-wrap">
+                                <nav class="menu-nav">
+                                    <ul class="flex flex-col no-decoration-family items-center">
+                                        <li>
+                                            <a href="index.html#about" class="menu_link menu-link-close">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#help" class="menu_link menu-link-close">Help</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#features" class="menu_link menu-link-close">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#signup" class="menu_link menu-link-close">Signup</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="container form-wrap bg-pink-15 rounded-lg flex flex-col md-flex-row items-center">
+                <div class="who-we-are-img-section">
+                    <img src="assets/img/data-bank.svg" alt="" class="who-we-are-img">
+                </div>
+
+                <form class="data-form flex flex-col">
+                    <h2 class="section-heading text-navy text-center">
+                        Enter product details for storage
+                    </h2>
+
+                    <fieldset>
+                        <div class="input-box relative">
+                            <label for="id-field">ID</label>
+                            <input type="number" name="id" id="id-field" class="form-field" />
+                            <span class="id-error tiny-text text-red error-field"></span>
+                        </div>
+                        <div class="input-box relative">
+                            <label for="item-name-field">Item Name</label>
+                            <input type="text" name="name" id="item-name-field" class="form-field" />
+                            <span class="name-error tiny-text text-red error-field"></span>
+                        </div>
+                        <div class="input-box relative">
+                            <label for="item-price-field">Item Price</label>
+                            <input type="number" name="price" id="item-price-field" class="form-field" />
+                            <span class="price-error tiny-text text-red error-field"></span>
+                        </div>
+                        <div class="input-box">
+                            <button type="submit" class="form-submit">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <!-- <h1 class="text-2xl font-bold text-dark text-center mb-8 border-collapse tracking-widest font-lato">
+                DATA TABLE
+            </h1> -->
+            <div class="container table-wrap">
+                <table class="data-table">
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="20%" />
+                        <col width="50%" />
+                        <col width="20%" />
+                    </colgroup>
+                    <thead class="">
+                        <tr class="table-header-row bg-purple">
+                            <th class="">
+                                <p class="serial-num"></p>
+                            </th>
+                            <th class="">
+                                <p>ID</p>
+                            </th>
+                            <th class="">
+                                <p>Item Name</p>
+                            </th>
+                            <th class="">
+                                <p>Item Price</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body ff-helvetica">
+                
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrap container flex flex-col">
+            <div class="footer-top flex flex-col md-flex-row justify-between">
+                <div class="footer-about flex flex-col">
+                    <div class="footer-about-top flex items-center">
+                        <a href="index.html">
+                            <img src="assets/img/logo.svg" alt="" class="footer-logo">
+                        </a>
+                        <p class="footer-logo-text">DataWarehouse</p>
+                    </div>
+                    <div class="footer-about-text flex flex-col">
+                        <p class="footer-address">
+                            Warehouse Society, 234 Bahagia Ave Street PRBW 29281
+                        </p>
+                        <p class="footer-contact">
+                            info@warehouse.project
+                            1-232-3434 (Main)
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-top-right flex flex-col md-flex-row">
+                    <div class="footer-links flex justify-between">
+                        <div class="footer-about-links w-fit flex-none">
+                            <h4 class="footer-header">
+                                About
+                            </h4>
+                            <nav>
+                                <ul class="flex flex-col no-decoration-family">
+                                    <li>
+                                        <a href="#" class="footer-link">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">DW News</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-help-links w-fit flex-none">
+                            <h4 class="footer-header">
+                                Help
+                            </h4>
+                            <nav>
+                                <ul class="flex flex-col no-decoration-family">
+                                    <li>
+                                        <a href="#" class="footer-link">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Sign up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Reports</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link">Q&A</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer-media">
+                        <h4 class="footer-header">
+                            Social Media
+                        </h4>
+                        <div class="footer-icon-group flex w-fit">
+                            <div class="footer-icon-wrap circle grid place-items-center">
+                                <img src="assets/img/facebook.svg" alt="" class="footer-media-icon">
+                            </div>
+                            <div class="footer-icon-wrap circle grid place-items-center">
+                                <img src="assets/img/twitter.svg" alt="" class="footer-media-icon">
+                            </div>
+                            <div class="footer-icon-wrap circle grid place-items-center">
+                                <img src="assets/img/instagram.svg" alt="" class="footer-media-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom flex justify-between items-center">
+                <p class="footer-rights">
+                    © Datawarehouse™, 2020. All rights reserved.
+                    Company Registration Number: 21479524.
+                </p>
+                <button class="message-btn-wrap grid place-items-center">
+                    <img src="assets/img/message.svg" alt="" class="footer-message-icon">
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/demo.js" type="module"></script>
+</body>
+</html>

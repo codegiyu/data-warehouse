@@ -15,6 +15,7 @@
     --clr-white: 255, 255, 255;
     --clr-pink: 240, 99, 184;
     --clr-purple: 156, 105, 226;
+    --clr-red: 228, 3, 59;
 
     --clr-navy: 33, 35, 83;
     --clr-grey: 75, 93, 104;
@@ -80,12 +81,14 @@ button {
 .bg-pink { background-color: rgb( var(--clr-pink) );}
 .bg-pink-15 { background-color: rgb( var(--clr-pink), 0.15 );}
 .bg-purple { background-color: rgb( var(--clr-purple) );}
+.bg-purple-15 { background-color: rgb( var(--clr-purple), 0.15 );}
 .bg-transparent { background-color: transparent; }
 
 .text-white, .text-white * { color: rgb( var(--clr-white) );}
 .text-navy { color: rgb( var(--clr-navy) );}
 .text-grey { color: rgb( var(--clr-grey) );}
 .text-purple { color: rgb( var(--clr-purple) );}
+.text-red { color: rgb( var(--clr-red) );}
 
 
 .ff-avenir { font-family: var(--ff-avenir);}
@@ -466,6 +469,13 @@ section, header, footer {
     font-weight: 800;
 }
 
+.tiny-text {
+    font-size: var(--fs-300);
+    line-height: 130%;
+    font-family: var(--ff-avenir);
+    font-weight: 800;
+}
+
 .btn-arrow {
     width: 1.25rem;
 }
@@ -615,7 +625,7 @@ header {
 
 .who-we-are {
     margin-bottom: 9rem;
-    --inline-edge: 0;
+    --inline-edge: 1.5rem;
 }
 
 .who-we-are-img {
@@ -772,7 +782,7 @@ header {
 
 .testimonials {
     margin-bottom: 9.375rem;
-    --inline-edge: 0;
+    --inline-edge: 1.5rem;
     --padding-left: 0;
 }
 
@@ -787,13 +797,18 @@ header {
     padding-left: var(--padding-left);
 }
 
-.slide-container {
+.slides-track {
     margin-top: 5.5rem;
     margin-bottom: 4rem;
     width: 100%;
     padding-left: 0;
     overflow: hidden;
-    --gap: 1.25rem;
+}
+
+.slide-container {
+    width: auto;
+    --gap: 20px;
+    transition: all 500ms ease;
 }
 
 .slide-single {
@@ -940,7 +955,7 @@ header {
         padding-right: 0;
     }
 
-    .slide-container {
+    .slides-track {
         padding-left: 5.5rem;
     }
 

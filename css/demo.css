@@ -1,0 +1,171 @@
+@import "./style.css";
+
+/* --------------------------- */
+/* -------Form Section-------- */
+/* --------------------------- */
+
+/* .form-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+} */
+
+.form-wrap {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.data-form {
+    width: 90%;
+    /* background: rgb( var(--clr-white) ); */
+    padding: 3rem 1.5rem 1rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    --gap: 2rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: var(--fs-200);
+    line-height: 180%;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    color: rgb( var(--clr-navy) );
+}
+
+.form-field {
+    width: 100%;
+    background: rgb( var(--clr-white) );
+    border: 1px solid rgb( var(--clr-grey) );
+    font-size: var(--fs-300);
+    line-height: 180%;
+    font-weight: 500;
+    color: rgb( var(--clr-grey) );
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+}
+
+.form-field:hover {
+    border-color: rgb( var(--clr-purple) );
+}
+
+.form-field:focus, .form-field:active {
+    border-color: rgb( var(--clr-purple) );
+    outline: 1px solid rgb( var(--clr-purple) );
+}
+
+.error-field {
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0;
+}
+
+.form-submit {
+    width: fit-content;
+    background: rgb( var(--clr-purple) );
+    color: rgb( var(--clr-white) );
+    font-size: var(--fs-400);
+    line-height: 180%;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.form-submit:disabled {
+    background: rgb( var(--clr-purple), 0.4 );
+    cursor: not-allowed;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .data-form {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+}
+
+
+/* --------------------------- */
+/* ------Table Section-------- */
+/* --------------------------- */
+
+.table-section {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.table-wrap {
+    width: 100%;
+}
+
+.data-table {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+}
+
+thead, thead tr {
+    width: 100%;
+}
+
+thead > tr > th {
+    width: auto;
+    text-align: start;
+}
+
+thead > tr > th > p {
+    font-size: var(--fs-200);
+    line-height: 180%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb( var(--clr-white) );
+    letter-spacing: 0.03em;
+    padding: 0.75rem 0;
+}
+
+th, td {
+    padding-left: 0.5rem;
+}
+
+tbody tr {
+    background: rgb( var(--clr-purple), 0.25 );
+}
+
+tbody tr:nth-of-type(2n+1) {
+    background: rgb( var(--clr-purple), 0.15 );
+}
+
+tbody > tr > td > p {
+    padding: 0.5rem 0;
+}
+
+tbody > tr > td:first-of-type > p {
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+}
