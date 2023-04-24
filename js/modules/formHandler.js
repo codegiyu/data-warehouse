@@ -35,7 +35,7 @@ const formHandler = (() => {
     }
 
     const calculateNextID = () => {
-        setState({ ...state, nextID: Math.max(...dataBank.state.data.map(entry => Number(entry.id))) + 1 })
+        setState({ ...state, nextID: (Math.max(...dataBank.state.data.map(entry => Number(entry.id))) || 0) + 1 })
     }
 
     const listeners = () => {
