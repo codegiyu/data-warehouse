@@ -16,7 +16,7 @@ const dataBank = (() => {
     const setState = (obj) => {
         state.data.push(obj)
         localStorage.setItem("dataStorage", JSON.stringify(state.data))
-        formHandler.setState({ ...formHandler.state, nextID: obj.id + 1 })
+        formHandler.setState({ ...formHandler.state, nextID: Number( obj.id) + 1 })
         render()
     }
 
