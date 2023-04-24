@@ -42,6 +42,15 @@
                 </nav>
             </div>
 
+            <div class="w-fit hidden md-block">
+                <a href="index.html" class="no-decoration-family">
+                    <button class="header-btn btn flex items-center bg-white w-fit">
+                        <img src="assets/img/arrow.svg" alt="" class="btn-arrow rotate-180">
+                        <span class="btn-text-regular text-navy tracking-5">Back home</span>
+                    </button>
+                </a>
+            </div>
+
             <div class="w-fit md-hidden">
                 <button id="menu-open-btn" class="menu-btn md-hidden block">
                     <img src="assets/img/menu.svg" alt="">
@@ -66,16 +75,18 @@
                                 <nav class="menu-nav">
                                     <ul class="flex flex-col no-decoration-family items-center">
                                         <li>
-                                            <a href="index.html#about" class="menu_link menu-link-close">About</a>
+                                            <a href="#form-section" class="menu_link menu-link-close">Product Form</a>
                                         </li>
                                         <li>
-                                            <a href="index.html#help" class="menu_link menu-link-close">Help</a>
+                                            <a href="#data-table" class="menu_link menu-link-close">Data Table</a>
                                         </li>
                                         <li>
-                                            <a href="index.html#features" class="menu_link menu-link-close">Features</a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html#signup" class="menu_link menu-link-close">Signup</a>
+                                            <a href="index.html" class="no-decoration-family">
+                                                <button class="header-btn btn flex items-center bg-white w-fit">
+                                                    <img src="assets/img/arrow.svg" alt="" class="btn-arrow rotate-180">
+                                                    <span class="btn-text-regular text-navy tracking-5">Back home</span>
+                                                </button>
+                                            </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -88,7 +99,7 @@
     </header>
 
     <main>
-        <section class="form-section">
+        <section id="form-section" class="form-section">
             <div class="container form-wrap bg-pink-15 rounded-lg flex flex-col md-flex-row items-center">
                 <div class="who-we-are-img-section">
                     <img src="assets/img/data-bank.svg" alt="" class="who-we-are-img">
@@ -102,17 +113,17 @@
                     <fieldset>
                         <div class="input-box relative">
                             <label for="id-field">ID</label>
-                            <input type="number" name="id" id="id-field" class="form-field" />
+                            <input type="text" name="id" id="id-field" class="form-field" required readonly />
                             <span class="id-error tiny-text text-red error-field"></span>
                         </div>
                         <div class="input-box relative">
                             <label for="item-name-field">Item Name</label>
-                            <input type="text" name="name" id="item-name-field" class="form-field" />
+                            <input type="text" name="name" id="item-name-field" class="form-field" required />
                             <span class="name-error tiny-text text-red error-field"></span>
                         </div>
                         <div class="input-box relative">
                             <label for="item-price-field">Item Price</label>
-                            <input type="number" name="price" id="item-price-field" class="form-field" />
+                            <input type="number" name="price" id="item-price-field" class="form-field" required />
                             <span class="price-error tiny-text text-red error-field"></span>
                         </div>
                         <div class="input-box">
@@ -123,23 +134,23 @@
             </div>
         </section>
 
-        <section class="table-section">
-            <!-- <h1 class="text-2xl font-bold text-dark text-center mb-8 border-collapse tracking-widest font-lato">
-                DATA TABLE
-            </h1> -->
+        <section id="data-table" class="table-section">
             <div class="container table-wrap">
+                <h2 class="section-heading text-navy text-center">
+                    Data Table
+                </h2>
                 <table class="data-table">
                     <colgroup>
+                        <!-- <col width="10%" /> -->
                         <col width="10%" />
-                        <col width="20%" />
-                        <col width="50%" />
-                        <col width="20%" />
+                        <col width="60%" />
+                        <col width="30%" />
                     </colgroup>
                     <thead class="">
                         <tr class="table-header-row bg-purple">
-                            <th class="">
+                            <!-- <th class="">
                                 <p class="serial-num"></p>
-                            </th>
+                            </th> -->
                             <th class="">
                                 <p>ID</p>
                             </th>

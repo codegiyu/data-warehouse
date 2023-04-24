@@ -109,10 +109,14 @@ label {
 .table-section {
     padding-top: 6rem;
     padding-bottom: 4rem;
+    --inline-edge: 0;
+    border-bottom: 1px solid rgb( var(--clr-purple), 0.2 );
 }
 
 .table-wrap {
     width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .data-table {
@@ -121,6 +125,9 @@ label {
     table-layout: fixed;
     border-collapse: collapse;
     border-spacing: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3rem;
 }
 
 thead, thead tr {
@@ -163,7 +170,10 @@ tbody > tr > td:first-of-type > p {
 }
 
 @media only screen and (min-width: 768px) {
-    
+    .table-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media only screen and (min-width: 992px) {

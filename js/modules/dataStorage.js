@@ -1,3 +1,5 @@
+import formHandler from "./formHandler.js";
+
 const dataBank = (() => {
     const tableBody = document.querySelector(".table-body")
     
@@ -14,7 +16,7 @@ const dataBank = (() => {
     const setState = (obj) => {
         state.data.push(obj)
         localStorage.setItem("dataStorage", JSON.stringify(state.data))
-
+        formHandler.setState({ ...formHandler.state, nextID: obj.id + 1 })
         render()
     }
 
@@ -23,9 +25,6 @@ const dataBank = (() => {
 
         state.data.forEach((item, idx) => {
             tableBody.innerHTML += `<tr className="table-body-row">
-                                        <td >
-                                            <p className="serial-num font-bold serial-num-body">${idx + 1}</p>
-                                        </td>
                                         <td >
                                             <p className="">${item.id}</p>
                                         </td>

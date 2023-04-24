@@ -379,6 +379,8 @@ section, header, footer {
 .rounded-lg { border-radius: 3.125rem; }
 .rounded-md { border-radius: 1.25rem; }
 
+.rotate-180 {transform: rotate(180deg);}
+
 .btn {
     padding: 1rem var(--padding-x, 2.375rem);
     border-radius: 3.125rem;
@@ -813,7 +815,7 @@ header {
 
 .slide-single {
     width: 100%;
-    padding: 3.75rem 4.375rem 3.125rem;
+    padding: 2rem 2rem;
     --gap: 1rem;
     position: relative;
     flex: none;
@@ -840,7 +842,7 @@ header {
 }
 
 .slide-single-top {
-    --gap: 1.875rem;
+    --gap: 0.875rem;
 }
 
 .slide-single-img {
@@ -961,8 +963,12 @@ header {
 
     .slide-single {
         width: 40.3125rem;
-        /* padding: 3.75rem 4.375rem 3.125rem; */
+        padding: 3.75rem 4.375rem 3.125rem;
         --gap: 0rem;
+    }
+
+    .slide-single-top {
+        --gap: 1.875rem;
     }
 
     .slide-single-bottom {
@@ -978,6 +984,13 @@ header {
 .cta {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
+    --inline-edge: 0;
+    border-top: 1px solid rgb( var(--clr-purple), 0.2 );
+}
+
+.cta-wrap {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .cta-texts {
@@ -986,6 +999,13 @@ header {
 
 .cta-buttons {
     --gap: 1.875rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .cta-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 

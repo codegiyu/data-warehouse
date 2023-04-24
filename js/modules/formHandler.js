@@ -14,10 +14,12 @@ const formHandler = (() => {
 
     const state = {
         errors: { id: "", name: "", price: ""},
-        disabled: false
+        disabled: false,
+        nextID: 0
     }
 
     const init = () => {
+        calculateNextID()
         render()
         listeners()
     }
@@ -27,8 +29,13 @@ const formHandler = (() => {
 
         state.errors = obj.errors
         state.disabled = disabled
+        state.nextID = obj.nextID
 
         render()
+    }
+
+    const calculateNextID = () => {
+        setState({ ...state, nextID: Math.max(...dataBank.state.data.map(entry => Number(entry.id))) + 1 })
     }
 
     const listeners = () => {
@@ -36,7 +43,7 @@ const formHandler = (() => {
             e.preventDefault()
 
             let dataPackage = {
-                id: idField.value,
+                id: idField.value.match(/\d+/g)[0],
                 itemName: nameField.value,
                 itemPrice: priceField.value
             }
@@ -48,16 +55,10 @@ const formHandler = (() => {
             }, 500)
         })
 
-        idField.addEventListener("input", function(e) {
+        nameField.addEventListener("input", function(e) {
             let name = e.target.name, value = e.target.value
 
             try {
-                for (let entry of dataBank.state.data) {
-                    if (entry.id === value) {
-                        throw new Error(`The id ${value} already exists`)
-                    }
-                }
-
                 setState({ ...state, errors: { ...state.errors, [name]: "" } })
             } catch (error) {
                 setState({ ...state, errors: { ...state.errors, [name]: error.message } })
@@ -83,12 +84,16 @@ const formHandler = (() => {
         idError.textContent = state.errors.id
         nameError.textContent = state.errors.name
         priceError.textContent = state.errors.price
-        
+
+        idField.setAttribute("value", `ID: ${state.nextID}`)
+        console.log(idField.value)
         btn.disabled = state.disabled
     }
 
     return {
-        init
+        init,
+        state,
+        setState
     }
 })()
 
